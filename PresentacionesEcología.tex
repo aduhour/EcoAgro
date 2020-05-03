@@ -1,0 +1,80 @@
+\documentclass[11pt]{beamer}
+\mode<presentation>{%
+  
+  \usetheme[]{Montpellier}%hideothersubsections,right,width=20mm
+  %\usecolortheme{seahorse}
+\usecolortheme{rose}
+%\usefonttheme[onlylarge]{structuresmallcapsserif}
+\usefonttheme{structurebold}
+%\useinnertheme{inmargin}
+%\useoutertheme{split}
+}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[spanish]{babel}
+\usepackage{multimedia}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{setspace}
+ \usepackage{natbib}
+ \usepackage{bibentry}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+
+\newcommand{\fullframegraphic}[1]{
+\begin{frame}[plain]
+\centering
+\includegraphics[height=\textheight,width=\textwidth,keepaspectratio]{#1}
+\end{frame}
+}
+
+\title{Ecología 11016 \\ Comisiones 1 y 2}
+\author{Andrés Duhour}
+\institute[Ecología]{Asignatura Ecología\\ División Biología - Departamento de Ciencias Básicas \\ Carrera de Ingeniería Agronómica - Universidad Nacional de Luján}
+\date{}
+
+\hypersetup{
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  citecolor={blue},
+  linkcolor={blue},
+  urlcolor={red},
+  pdfpagemode={UseOutlines},
+  plainpages=false
+}
+
+\includeonly{Unidad3/unidad3}
+
+\begin{document}
+\begin{frame}\pdfbookmark[0]{Ecología}{titulo}
+  \titlepage
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Contenidos}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+
+\include{Unidad1/unidad1}
+\include{Unidad2/unidad2}
+\include{Unidad3/unidad3}
+
+ %\section{Bibliografía}
+ \begin{frame}[allowframebreaks]{Bibliografía}
+       %  \frametitle
+       \footnotesize{
+         \bibliographystyle{apalike}
+         \bibliography{../Biblio/ecoagro.bib}
+         }
+ \end{frame}
+
+\end{document}
